@@ -22,12 +22,12 @@ public class StudentSeverlet {
         return "index";
     }
     @GetMapping(value = "/create")
-    public String create(Model model, @ModelAttribute("nganchan") Student student) {
+    public String create(Model model, @ModelAttribute("Tam") Student student) {
         return "create";
     }
 
     @PostMapping(value = "/create")
-    public String createNewStudent(Model model, @ModelAttribute("nganchan") Student student) {
+    public String createNewStudent(Model model, @ModelAttribute("Tam") Student student) {
         studentService.save(student);
         return list(model);
     }

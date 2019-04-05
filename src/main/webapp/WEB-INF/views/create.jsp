@@ -18,7 +18,7 @@
 <p>
     <a href="/student">Back to student list</a>
 </p>
-<form:form method="post" action="/create" modelAttribute="nganchan">
+<form:form method="post" action="/create" modelAttribute="Tam">
     <fieldset>
     <legend>Student information</legend>
     <table>
